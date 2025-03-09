@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Felicitación de Cumpleaños</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f8e1e1; /* Color de fondo suave */
+      color: white;
+      overflow: hidden;
+    }
+
+    .collage {
+      position: relative;
+      width: 80%;
+      height: 80%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      margin-top: 20px;
+      overflow: auto; /* Permite el desplazamiento */
+      cursor: pointer; /* Indica que el área es interactiva */
+    }
+
+    .collage img {
+      position: relative;
+      max-width: 45%;
+      margin: 10px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      opacity: 0.8;
+      transition: opacity 0.3s ease-in-out;
+    }
+
+    .collage img:hover {
+      opacity: 1;
+    }
+
+    .sobre {
+      width: 350px;
+      height: 200px;
+      background-color: #f7a7d8; /* Color rosa claro */
+      position: relative;
+      cursor: pointer;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      border-radius: 10px;
+      overflow: hidden;
+      z-index: 10;
+    }
+
+    .sobre::before {
+      content: 'Feliz Cumpleaños';
+      position: absolute;
+      top: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+      font-weight: bold;
+      font-size: 18px;
+      color: white;
+    }
+
+    .carta {
+      display: none;
+      background-color: #fff;
+      width: 320px;
+      max-height: 80vh;
+      padding: 20px;
+      margin: 10px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      font-size: 16px;
+      color: #555;
+      overflow-y: auto;
+    }
+
+    .carta h1 {
+      font-size: 24px;
+      color: #f8a5c2;
+    }
+
+    .carta p {
+      font-size: 14px;
+      line-height: 1.6;
+      text-align: left;
+      margin-bottom: 10px;
+    }
+
+    .carta .firma {
+      text-align: right;
+      font-style: italic;
+      margin-top: 20px;
+      color: #888;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="collage">
+    <!-- Añade aquí las imágenes de tu collage -->
+    <img src="C:/Users/dorec/OneDrive/Pictures/Screenshots/Imagen de WhatsApp 2025-03-08 a las 23.40.03_94c885a0.jpg" alt="Imagen 1">
+    <img src="C:/Users/dorec/OneDrive/Pictures/Screenshots/Imagen de WhatsApp 2025-03-08 a las 23.40.03_fb5d1cdf.jpg" alt="Imagen 2">
+    <img src="C:/Users/dorec/OneDrive/Pictures/Screenshots/Imagen de WhatsApp 2025-03-08 a las 23.40.04_efa5e23e.jpg" alt="Imagen 3">
+    <img src="C:/Users/dorec/OneDrive/Pictures/Screenshots/Imagen de WhatsApp 2025-03-08 a las 23.40.05_680b312c.jpg" alt="Imagen 4">
+    <img src="C:/Users/dorec/OneDrive/Pictures/Screenshots/Imagen de WhatsApp 2025-03-08 a las 23.40.05_37826a16.jpg" alt="Imagen 5">
+    <img src="C:/Users/dorec/OneDrive/Pictures/Screenshots/Imagen de WhatsApp 2025-03-08 a las 23.40.05_f717fd1b.jpg" alt="Imagen 6">
+  </div>
+
+  <div class="sobre" onclick="abrirCarta()">
+    <div class="carta" id="carta">
+      <h1>Mi Amor,</h1>
+      <p>
+        Hoy es un día especial, no solo porque celebro el hecho de que naciste, sino porque celebro cada segundo que paso a tu lado, 
+        cada sonrisa tuya que ilumina mi vida, y cada gesto de amor que me das. Feliz cumpleaños, mi vida. No puedo dejar de pensar en lo 
+        afortunado que soy por tenerte en mi vida, por poder compartir contigo cada día, cada risa, cada conversación, y hasta los silencios 
+        más cómodos. Eres el regalo más hermoso que he recibido.
+      </p>
+      <p>
+        Recuerdo el primer día que nos conocimos, cómo todo a mi alrededor parecía desvanecerse y, en ese momento, solo existías tú. 
+        No imaginé que ese encuentro marcaría el comienzo de la aventura más maravillosa de mi vida. Desde entonces, he aprendido tanto de ti: 
+        tu fortaleza, tu bondad, tu paciencia, y tu manera de ver el mundo con ojos tan puros y llenos de esperanza. Y por todo eso, te admiro profundamente.
+      </p>
+      <p>
+        Además de estar agradecido contigo por haberte fijado en mí y en darme una oportunidad de poder estar contigo siendo más que solo amigos, 
+        en verdad TE AMO y jamás lo dudes.
+      </p>
+      <p>
+        Hoy quiero que sepas cuánto te valoro, cuánto te quiero, y cuánto significas para mí. No hay palabras suficientes para describir lo 
+        afortunado que me siento de estar a tu lado. Eres mi compañera, mi amiga, mi confidente, y el amor de mi vida. Cada día contigo es 
+        un regalo que atesoro en mi corazón, y no hay nada que desee más que seguir compartiendo este camino contigo, disfrutando de todos 
+        los momentos que la vida nos tenga preparados.
+      </p>
+      <p>
+        Espero que este nuevo año que comienzas esté lleno de bendiciones, de momentos felices, de sueños cumplidos y de mucho amor. 
+        Porque si hay alguien que merece lo mejor de este mundo, esa eres tú. Me comprometo a seguir a tu lado, apoyándote, haciéndote sonreír, 
+        y amándote con todo mi ser.
+      </p>
+      <p>
+        Gracias por ser tú, por ser mi todo. Te amo más de lo que las palabras pueden expresar, y en este día tan especial, quiero recordarte 
+        lo increíble que eres, no solo para mí, sino para el mundo. Que este cumpleaños sea solo el comienzo de un año lleno de bendiciones 
+        y de todo lo que más deseas.
+      </p>
+      <p class="firma">
+        Feliz cumpleaños, mi amor. Hoy y siempre, mi corazón es tuyo.
+        <br>Con todo mi amor,<br>
+        [Tu Nombre]
+      </p>
+    </div>
+  </div>
+
+  <script>
+    function abrirCarta() {
+      const carta = document.getElementById("carta");
+      carta.style.display = "block";  // Esto hace que la carta aparezca al hacer clic
+    }
+  </script>
+</body>
+</html>
+
